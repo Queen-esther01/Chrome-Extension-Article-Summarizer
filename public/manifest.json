@@ -1,0 +1,30 @@
+{
+    "name": "InSummary",
+    "description": "InSummary is a chrome extension that summarizes the content of the current tab.",
+    "version": "1.0",
+    "manifest_version": 3,
+    "action": {
+      "default_popup": "index.html",
+      "default_icon": "./images/insummary_128.png"
+    },
+    "icons": {
+      "16": "./images/insummary_16.jpg",
+      "32": "./images/insummary_32.jpg",
+      "48": "./images/insummary_48.jpg",
+      "128": "./images/insummary_128.png"
+    },
+    "content_scripts": [
+      {
+        "js": ["./content.js"],
+        "css": ["./index.css"],
+        "matches": ["<all_urls>"]
+      }
+    ],
+    "permissions": [
+      "activeTab", "scripting", "tabs"
+    ],
+    "background": {
+      "service_worker": "background.js"
+    }
+}
+  

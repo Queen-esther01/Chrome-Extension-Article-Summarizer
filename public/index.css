@@ -1,0 +1,12 @@
+.insummary-label {
+  background-color: #2c3e50;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid #34495e; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);  
+  font-weight: 500; 
+  margin: 4px; 
+  text-align: center;
+}
+  
